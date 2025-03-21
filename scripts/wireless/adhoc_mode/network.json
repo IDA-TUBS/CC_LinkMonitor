@@ -1,0 +1,10 @@
+{
+    "COHDA": {
+        "SSID": "cohda",
+        "FREQUENCY": 5180
+    },
+    "CTRL": {
+        "SSID": "control",
+        "FREQUENCY": 5765
+    }
+}

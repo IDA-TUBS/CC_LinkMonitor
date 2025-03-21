@@ -1,0 +1,11 @@
+.gitignore
+**/build
+**/.vscode
+
+# ignore boost build files
+RSCMNG/thirdparty/boost_1_73_0/stage
+RSCMNG/thirdparty/boost_1_73_0/bin.v2
+RSCMNG/thirdparty/boost_1_73_0/project-config.jam*
+RSCMNG/thirdparty/boost_1_73_0/b2
+RSCMNG/thirdparty/boost_1_73_0/tools/build/
+RSCMNG/thirdparty/boost_1_73_0/tools/bootstrap.log

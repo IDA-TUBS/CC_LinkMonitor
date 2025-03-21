@@ -1,0 +1,21 @@
+# - Config file for the continuous connectivity linkmonitor library
+
+@PACKAGE_INIT@
+include( "${CMAKE_CURRENT_LIST_DIR}/cc_linkmonitorTargets.cmake" )
+
+# Check if the package has been loaded already
+if(TARGET cc_linkmonitor)
+  return()
+endif()
+
+message(STATUS "Found CC_LINKMONITOR ${CMAKE_CURRENT_LIST_DIR}")
+
+find_package(Boost 1.73.0 EXACT COMPONENTS system log log_setup thread REQUIRED)
+
+message(STATUS "Boost was found")
+
+set(CC_LINKMONITOR_LIB linkmonitor boost_log)
+set(CC_LINKMONITOR_COMPILE_OPTIONS -g)
+set(CC_LINKMONITOR_COMPILE_DEFINITIONS BOOST_LOG_DYN_LINK)
+
+message(STATUS "CC_LINKMONITOR options set ${CC_LINKMONITOR_COMPILE_OPTIONS} ${CC_LINKMONITOR_COMPILE_DEFINITIONS}")

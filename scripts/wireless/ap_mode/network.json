@@ -1,0 +1,12 @@
+{
+    "COHDA": {
+        "SSID": "cohda_ap",
+        "PASSWORD": "somepassword",
+        "CHANNEL": 36
+    },
+    "CTRL": {
+        "SSID": "ctrl_ap",
+        "PASSWORD": "controlpassword",
+        "CHANNEL": 157
+    }
+}
