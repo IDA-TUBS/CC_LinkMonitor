@@ -41,19 +41,19 @@ target_link_libraries(cc_linkmonitor PUBLIC boost_system boost_log boost_log_set
 target_compile_definitions(cc_linkmonitor PUBLIC BOOST_LOG_DYN_LINK)
 
 # Enable logging via -DLOG during build process
-if(DEFINED LOG)
+if(LOG)
     message("Logging activated")
     target_compile_definitions(cc_linkmonitor PUBLIC LOG_ON)
 endif()
 
 # Enable file log via -DFILE during build process
-if(DEFINED FILE)
+if(FILE)
     message("File logging activated")
     target_compile_definitions(cc_linkmonitor PUBLIC FILE_ON)
 endif()
 
 # Enable console log via -DCONSOLE during build process
-if(DEFINED CONSOLE)
+if(CONSOLE)
     message("Console logging activated")
     target_compile_definitions(cc_linkmonitor PUBLIC CONSOLE_ON)
 endif()
